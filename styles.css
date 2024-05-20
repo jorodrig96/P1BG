@@ -1,0 +1,62 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #4e4736;
+}
+
+.points {
+    display: flex;
+    font-size: 6vh;
+    font-weight: bolder;
+    justify-content: center;
+    color: whitesmoke
+}
+
+.points > * {
+    margin: 2vh 0;
+    padding: 0 4vh;
+    flex-grow: 1;
+    flex-basis: 0;
+    opacity: .5;
+}
+
+.points > :first-child {
+    text-align: right;
+    border-right: .5vh solid;
+}
+
+.paddle{
+    --barPosition: 50;
+
+    position: absolute;
+    background-color: #179cf4;
+    height: 12vh;
+    width: 1.5vh;
+    top: calc(var(--barPosition) * 1vh);
+    transform: translateY(-50%);
+}
+
+.ping-pong{
+    --x: 50;
+    --y: 50;
+
+    position: absolute;
+    background-color: #c6ffb9;
+    left: calc(var(--x) * 1vw);
+    top: calc(var(--y) * 1vh);
+    width: 2vh;
+    height: 2vh;
+    transform: translateY(-50%, -50%); 
+    border-radius: 50%;
+}
+
+.paddle.left{
+    left: 1.5vw;
+}
+
+.paddle.right{
+    right: 1.5vw;
+}
