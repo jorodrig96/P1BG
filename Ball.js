@@ -1,4 +1,5 @@
-const STARTING_VELOC = .025
+const STARTING_VELOC = .040
+const SPEED_INCREASE = .00001
 
 export default class Ball {
     constructor(ballElement){
@@ -23,6 +24,10 @@ set y(value){
     this.ballElement.style.setProperty('--y', value)
 }
 
+rect(){
+    return this.ballElement.getBoundingClientRect()
+}
+
 reset(){
     this.x = 50
     this.y = 50
@@ -40,6 +45,15 @@ reset(){
 update(delta){
     this.x += this.direction.x * this.velocity * delta
     this.y += this.direction.y * this.velocity * delta
+    this.velocity += SPEED_INCREASE * delta 
+    const rect = this.rect()
+
+    if(rect.bottom >= window.innerHeight || rect.top <= 0){
+        this.direction.y *= -1
+    }
+    if(rect.right >= window.innerHeight || rect.left <= 0){
+        this.direction.x *= -1
+    }
 }
 }
 
