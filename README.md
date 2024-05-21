@@ -4,7 +4,7 @@
 
 ## Ping Pong game where youre playing against the computer. Points get logged when either the player or the computer loses. The ball speeds up as the game progresses making it a bit more difficult.
 
-:test_tube: technologies used :test_tube:
+## :test_tube:  technologies used :test_tube:
 
 ### Javascript
 ### HTML
