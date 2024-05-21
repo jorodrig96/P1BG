@@ -12,7 +12,6 @@
 
 ## Challenges
 
-### Learning how to create the proper syntax to keep track of the balls location. Learned how to use the 
-### x & y values a little bit more. Still got to practice but this forsure helped.
+### Learning how to create the proper syntax to keep track of the balls location. Learned how to use the  x and y axis in code little bit more. Still got to practice but this forsure helped.
 
 ### Credit to [Youtube](https://www.youtube.com/) for all the help. 
