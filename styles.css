@@ -30,13 +30,13 @@ body {
 }
 
 .paddle{
-    --barPosition: 50;
+    --position: 50;
 
     position: absolute;
     background-color: #179cf4;
     height: 12vh;
     width: 1.5vh;
-    top: calc(var(--barPosition) * 1vh);
+    top: calc(var(--position) * 1vh);
     transform: translateY(-50%);
 }
 
